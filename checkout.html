@@ -6,10 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
     <link rel="stylesheet" href="checkout.css">
-
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <div>
+    <header>
+        <nav class="">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <i class='bx bxl-magento' ></i><h1>Furniro</h1>
+                </div>
+                <div class="nav-options">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-icons">
+                    <a href="login.html" class="text-dark"><i class='bx bx-user' ></i></a>
+                    <i class='bx bx-search' ></i>
+                    <i class='bx bx-heart' ></i>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"  aria-controls="offcanvasExample" class="text-dark"><i class="bx bx-cart"></i></a>
+                </div>
+            </div>
+            <section class="cart">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body" id="cartItems">
+          
+                  </div>
+                  <a href="checkout.html"><button class="btn btn-warning rounded-0 w-100" >check out <i class="bi bi-arrow-right"></i></button></a>
+                </div>
+              </section>
+        </nav>
+    </header>
+    <div class="bbttnn">
         <a href="index.html#product"><button class="bttn">Back</button></a>
     </div>
 
@@ -97,7 +134,48 @@
         <a href="index.html"><button class="submit-btn" onclick="checkoutDone()">Proceed To Checkout</button></a>
     </div>
 
-</div>    
+</div>   
+
+<footer>
+    <hr>
+        <div class="foot-pane">
+    <ul>
+    <h3 class="foot-pane-h3">Funiro.</h3>
+    <h4 class="foot-pane-h4">400 University Drive Suite 200 Coral <br> Gables, </h4>
+    <h4 class="foot-pane-h42">FL 33134 USA </h4>
+    </ul>
+    <ul>
+    <p>Links</p>
+    <a>Home</a>
+    <a> Shop</a>
+    <a>About</a>
+    <a>Contact</a>
+   
+    </ul>
+    <ul>
+    <p>Help</p>
+    <a>Payment Option</a>
+    <a>Return</a>
+    <a>Privacy Policies</a>
+    
+    </ul>
+    <ul>
+    <p>Newsletter</p>
+    <input type="text" placeholder="Enter your Email Address">
+    <button class="button">SUBSCRIBE</button> 
+    <h5 text-decoration-line:underline;></h5>
+    <div class="botton"></div>
+    </ul>
+    </div>
+    <hr>    
+    </div>
+    </div>
+    <div class="line"></div>
+    <div class="copyright">
+        <p>2023 furino. All rights reserved</p>
+    </div>
+    </div>
+    </footer>
     
     <script src="./checkout.js"></script>
 </body>
