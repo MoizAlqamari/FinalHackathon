@@ -65,7 +65,7 @@ header{
 }
 
 .banner{
-    background-image: url("image/lol.jpg");
+    background-image: url("lol.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
